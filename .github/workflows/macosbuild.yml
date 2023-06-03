@@ -27,3 +27,8 @@ jobs:
 
     - name: Deploying pgModeler
       run: make install
+
+    - uses: actions/download-artifact@v3
+      with:
+        name: 'pgModeler.app'
+        path: /Applications/pgModeler.app
